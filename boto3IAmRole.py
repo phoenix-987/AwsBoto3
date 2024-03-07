@@ -104,8 +104,8 @@ def create_new_policy(client, policy):
 client = boto3.client('iam')
 username = 'DemoUser'
 
-# add_new_user(client=client, user=username)÷
-# add_user_to_grp(client=client, user=username)
-# remove_iam_user_from_grp(client=client, user=username)
-# delete_iam_user(client=client, user=username)
+add_new_user(client=client, user=username)
+add_user_to_grp(client=client, user=username)
+remove_iam_user_from_grp(client=client, user=username)
+delete_iam_user(client=client, user=username)
 create_new_policy(client=client, policy=S3_POLICY)
